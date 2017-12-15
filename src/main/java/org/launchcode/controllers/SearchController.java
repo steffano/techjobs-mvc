@@ -36,7 +36,7 @@ class SearchController {
         else{
             jobResults = JobData.findByColumnAndValue(searchType, searchTerm);
         }
-        model.addAttribute("jobResults", jobResults);
+        model.addAttribute("jobs", jobResults);
 
         return "search";
     }

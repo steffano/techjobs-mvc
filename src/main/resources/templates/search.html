@@ -39,7 +39,7 @@
     <!-- TODO #2 - Loop over jobs map to display all job fields -->
 
     <div th:fragment="search-all">
-        <table class ="job-listing" th:each="job: ${jobResults}">
+        <table class ="job-listing" th:each="job: ${jobs}">
             <tr th:each="key: ${job.keySet()}">
                 <td th:text="${key}+ ': '+ ${job.get(key)}"></td>
             </tr>
